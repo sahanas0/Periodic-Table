@@ -1,0 +1,37 @@
+<!--
+This program is the landing/starting page of the Periodic Table Pal website. It contains the webpage title, 
+two animated gifs of beakers, a textbox for the user to enter their name, and a button to lead them to the
+periodic table page. 
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Periodic Table Pal</title>
+  </head>
+  <body>
+    <div id="page1-format">
+      <!--image citation: https://dribbble.com/shots/3279750-Science-Scene?scrlybrkr=8096b374-->
+      <img src="beaker1.gif" class="side-image" />
+      <div id="format-center">
+        <p>Welcome to Periodic Table Pal!</p>
+
+        <!--Input field for user to enter their name-->
+
+        <input id="enterNameBox" type="text" placeholder="Enter your name..." />
+        <br />
+        <br />
+
+        <!--Button to continue to periodic table page-->
+        <button id="continue" onclick="goToNextPage('periodicTable.html')">
+          Continue to Periodic Table
+        </button>
+      </div>
+      <!--image citation: https://giphy.com/explore/chemistry-lab-stickers-->
+      <img src="beaker2.gif" class="side-image" />
+    </div>
+    <script src="periodicTablePal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!--
+This program is the result page of both the easy and the hard quiz. It presents a gif in the 
+background based on whether the user won or lost the game. In order to win, 3 or more questions
+should have been correctly answered or else they lose. There is a button to go back to the 
+Quiz Home page, where they can select either the Easy or Hard quiz, and there is a button to 
+go back to the Periodic Table page, where they can see all the periodic table elements and the
+periodic trends.   
+-->
+
+<!DOCTYPE html>              
+   
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="results.css">
+		<title>Results</title>
+	</head>
+	<body>
+        <h1>Quiz Complete!</h1>
+        <br>
+
+        <!--This prints the score that the user got in either the hard or easy quiz
+        (whichever they selected) and shows a gif based on their performance-->
+        <h2 id="printScoreInfo"></h2>
+
+        <img id = "resultGif" class = "result-gif">
+
+        <!--These buttons take the user back to either the periodic table or the Quiz Home-->
+        <div class="button-group">
+        <button onclick="goToNextPage('periodicTable.html')">
+          Return to Periodic Table
+        </button>
+        <button onclick="goToNextPage('quizHome.html')">
+          Play Again
+        </button>
+      </div>
+       
+    </div>
+        <script src="results.js"></script>
+	</body>
+</html>    

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="periodicTablePal.css" />
+    <title>Periodic Table Pal</title>
+  </head>
+  <body>
+    <!-- Creating an unordered list for navigation -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="periodicTable.html">Periodic Table Pal</a></li>
+      <li><a href="quizHome.html">Quiz Your Knowledge</a></li>
+    </ul>
+    <br />
+    <div id="table-format">
+      <div id="element-button">
+        <!-- Creating buttons for all 118 elements of the Periodic Table-->
+        <button id="hydrogen" onclick="showElementInfo(1)">H</button>
+        <button id="helium" onclick="showElementInfo(2)">He</button>
+        <button id="lithium" onclick="showElementInfo(3)">Li</button>
+        <button id="beryllium" onclick="showElementInfo(4)">Be</button>
+        <button id="boron" onclick="showElementInfo(5)">B</button>
+        <button id="carbon" onclick="showElementInfo(6)">C</button>
+        <button id="nitrogen" onclick="showElementInfo(7)">N</button>
+        <button id="oxygen" onclick="showElementInfo(8)">O</button>
+        <button id="fluorine" onclick="showElementInfo(9)">F</button>
+        <button id="neon" onclick="showElementInfo(10)">Ne</button>
+        <button id="sodium" onclick="showElementInfo(11)">Na</button>
+        <button id="magnesium" onclick="showElementInfo(12)">Mg</button>
+        <button id="aluminum" onclick="showElementInfo(13)">Al</button>
+        <button id="silicon" onclick="showElementInfo(14)">Si</button>
+        <button id="phosphorus" onclick="showElementInfo(15)">P</button>
+        <button id="sulfur" onclick="showElementInfo(16)">S</button>
+        <button id="chlorine" onclick="showElementInfo(17)">Cl</button>
+        <button id="argon" onclick="showElementInfo(18)">Ar</button>
+        <button id="potassium" onclick="showElementInfo(19)">K</button>
+        <button id="calcium" onclick="showElementInfo(20)">Ca</button>
+        <button id="scandium" onclick="showElementInfo(21)">Sc</button>
+        <button id="titanium" onclick="showElementInfo(22)">Ti</button>
+        <button id="vanadium" onclick="showElementInfo(23)">V</button>
+        <button id="chromium" onclick="showElementInfo(24)">Cr</button>
+        <button id="manganese" onclick="showElementInfo(25)">Mn</button>
+        <button id="iron" onclick="showElementInfo(26)">Fe</button>
+        <button id="cobalt" onclick="showElementInfo(27)">Co</button>
+        <button id="nickel" onclick="showElementInfo(28)">Ni</button>
+        <button id="copper" onclick="showElementInfo(29)">Cu</button>
+        <button id="zinc" onclick="showElementInfo(30)">Zn</button>
+        <button id="gallium" onclick="showElementInfo(31)">Ga</button>
+        <button id="germanium" onclick="showElementInfo(32)">Ge</button>
+        <button id="arsenic" onclick="showElementInfo(33)">As</button>
+        <button id="selenium" onclick="showElementInfo(34)">Se</button>
+        <button id="bromine" onclick="showElementInfo(35)">Br</button>
+        <button id="krypton" onclick="showElementInfo(36)">Kr</button>
+        <button id="rubidium" onclick="showElementInfo(37)">Rb</button>
+        <button id="strontium" onclick="showElementInfo(38)">Sr</button>
+        <button id="yttrium" onclick="showElementInfo(39)">Y</button>
+        <button id="zirconium" onclick="showElementInfo(40)">Zr</button>
+        <button id="niobium" onclick="showElementInfo(41)">Nb</button>
+        <button id="molybdenum" onclick="showElementInfo(42)">Mo</button>
+        <button id="technetium" onclick="showElementInfo(43)">Tc</button>
+        <button id="ruthenium" onclick="showElementInfo(44)">Ru</button>
+        <button id="rhodium" onclick="showElementInfo(45)">Rh</button>
+        <button id="palladium" onclick="showElementInfo(46)">Pd</button>
+        <button id="silver" onclick="showElementInfo(47)">Ag</button>
+        <button id="cadmium" onclick="showElementInfo(48)">Cd</button>
+        <button id="indium" onclick="showElementInfo(49)">In</button>
+        <button id="tin" onclick="showElementInfo(50)">Sn</button>
+        <button id="antimony" onclick="showElementInfo(51)">Sb</button>
+        <button id="tellurium" onclick="showElementInfo(52)">Te</button>
+        <button id="iodine" onclick="showElementInfo(53)">I</button>
+        <button id="xenon" onclick="showElementInfo(54)">Xe</button>
+        <button id="cesium" onclick="showElementInfo(55)">Cs</button>
+        <button id="barium" onclick="showElementInfo(56)">Ba</button>
+        <button id="lanthanum" onclick="showElementInfo(57)">La</button>
+        <button id="cerium" onclick="showElementInfo(58)">Ce</button>
+        <button id="praseodymium" onclick="showElementInfo(59)">Pr</button>
+        <button id="neodymium" onclick="showElementInfo(60)">Nd</button>
+        <button id="promethium" onclick="showElementInfo(61)">Pm</button>
+        <button id="samarium" onclick="showElementInfo(62)">Sm</button>
+        <button id="europium" onclick="showElementInfo(63)">Eu</button>
+        <button id="gadolinium" onclick="showElementInfo(64)">Gd</button>
+        <button id="terbium" onclick="showElementInfo(65)">Tb</button>
+        <button id="dysprosium" onclick="showElementInfo(66)">Dy</button>
+        <button id="holmium" onclick="showElementInfo(67)">Ho</button>
+        <button id="erbium" onclick="showElementInfo(68)">Er</button>
+        <button id="thulium" onclick="showElementInfo(69)">Tm</button>
+        <button id="ytterbium" onclick="showElementInfo(70)">Yb</button>
+        <button id="lutetium" onclick="showElementInfo(71)">Lu</button>
+        <button id="hafnium" onclick="showElementInfo(72)">Hf</button>
+        <button id="tantalum" onclick="showElementInfo(73)">Ta</button>
+        <button id="tungsten" onclick="showElementInfo(74)">W</button>
+        <button id="rhenium" onclick="showElementInfo(75)">Re</button>
+        <button id="osmium" onclick="showElementInfo(76)">Os</button>
+        <button id="iridium" onclick="showElementInfo(77)">Ir</button>
+        <button id="platinum" onclick="showElementInfo(78)">Pt</button>
+        <button id="gold" onclick="showElementInfo(79)">Au</button>
+        <button id="mercury" onclick="showElementInfo(80)">Hg</button>
+        <button id="thallium" onclick="showElementInfo(81)">Tl</button>
+        <button id="lead" onclick="showElementInfo(82)">Pb</button>
+        <button id="bismuth" onclick="showElementInfo(83)">Bi</button>
+        <button id="polonium" onclick="showElementInfo(84)">Po</button>
+        <button id="astatine" onclick="showElementInfo(85)">At</button>
+        <button id="radon" onclick="showElementInfo(86)">Rn</button>
+        <button id="francium" onclick="showElementInfo(87)">Fr</button>
+        <button id="radium" onclick="showElementInfo(88)">Ra</button>
+        <button id="actinium" onclick="showElementInfo(89)">Ac</button>
+        <button id="thorium" onclick="showElementInfo(90)">Th</button>
+        <button id="protactinium" onclick="showElementInfo(91)">Pa</button>
+        <button id="uranium" onclick="showElementInfo(92)">U</button>
+        <button id="neptunium" onclick="showElementInfo(93)">Np</button>
+        <button id="plutonium" onclick="showElementInfo(94)">Pu</button>
+        <button id="americium" onclick="showElementInfo(95)">Am</button>
+        <button id="curium" onclick="showElementInfo(96)">Cm</button>
+        <button id="berkelium" onclick="showElementInfo(97)">Bk</button>
+        <button id="californium" onclick="showElementInfo(98)">Cf</button>
+        <button id="einsteinium" onclick="showElementInfo(99)">Es</button>
+        <button id="fermium" onclick="showElementInfo(100)">Fm</button>
+        <button id="mendelevium" onclick="showElementInfo(101)">Md</button>
+        <button id="nobelium" onclick="showElementInfo(102)">No</button>
+        <button id="lawrencium" onclick="showElementInfo(103)">Lr</button>
+        <button id="rutherfordium" onclick="showElementInfo(104)">Rf</button>
+        <button id="dubnium" onclick="showElementInfo(105)">Db</button>
+        <button id="seaborgium" onclick="showElementInfo(106)">Sg</button>
+        <button id="bohrium" onclick="showElementInfo(107)">Bh</button>
+        <button id="hassium" onclick="showElementInfo(108)">Hs</button>
+        <button id="meitnerium" onclick="showElementInfo(109)">Mt</button>
+        <button id="darmstadtium" onclick="showElementInfo(110)">Ds</button>
+        <button id="roentgenium" onclick="showElementInfo(111)">Rg</button>
+        <button id="copernicium" onclick="showElementInfo(112)">Cn</button>
+        <button id="nihonium" onclick="showElementInfo(113)">Nh</button>
+        <button id="flerovium" onclick="showElementInfo(114)">Fl</button>
+        <button id="moscovium" onclick="showElementInfo(115)">Mc</button>
+        <button id="livermorium" onclick="showElementInfo(116)">Lv</button>
+        <button id="tennessine" onclick="showElementInfo(117)">Ts</button>
+        <button id="oganesson" onclick="showElementInfo(118)">Og</button>
+      </div>
+      <div id="info">
+        <div id="element-info-box">
+          <!-- placeholder for the element info box and makes the page more intuitive for users -->
+          <h2>Select Any Element From the Table to Learn!</h2>
+        </div>
+        <div id="trend-section">
+          <p id="trendsPara">Select a Periodic Trend</p>
+          <div id="trend-buttons">
+            <!-- periodic trends are shown here to further teach users -->
+            <button class="trend-btn" id="atomic-radius">Atomic Radius</button>
+            <button class="trend-btn" id="electronegativity">
+              Electronegativity
+            </button>
+            <button class="trend-btn" id="ionization-energy">
+              Ionization Energy
+            </button>
+          </div>
+          <div id="trend-images"></div>
+          <!-- corresponds to id in css, this is for the arrow images for the periodic trends -->
+        </div>
+      </div>
+    </div>
+    <script src="periodicTablePal.js"></script>
+  </body>
+</html>

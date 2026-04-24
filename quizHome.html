@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="quizHome.css" />
+    <title>Quiz Home</title>
+  </head>
+  <body>
+    <!-- Creating an unordered list for navigation bar on the top of the page-->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="periodicTable.html">Periodic Table Pal</a></li>
+      <li><a href="quizHome.html">Quiz Your Knowledge</a></li>
+    </ul>
+    <div class="container">
+      <img src="circles.webp" class="circles-gif" />
+      <!-- Image is from here: https://pixabay.com/gifs/pattern-circles-decorative-flowers-12850/ -->
+      <h2>Quiz Your Periodic Table Knowledge!</h2>
+      <h3>Choose Your Difficulty</h3>
+
+      <!-- making the buttons for the options for either an easy or hard quiz. 
+	There are different questions for each quiz type-->
+      <div class="button-group">
+        <button class="quiz-btn" onclick="goToNextPage('easyQuiz.html')">
+          Easy
+        </button>
+        <button class="quiz-btn" onclick="goToNextPage('hardQuiz.html')">
+          Hard
+        </button>
+      </div>
+    </div>
+    <script src="quizHome.js"></script>
+  </body>
+</html>
